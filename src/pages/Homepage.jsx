@@ -9,7 +9,7 @@ const Homepage = () => {
 <Sidebar />
 <Chat />
       </div>
-    </div>
+    </div> 
   )
 }
 
