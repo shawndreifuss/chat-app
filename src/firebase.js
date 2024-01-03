@@ -5,16 +5,17 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD_SNVgVI9jlqUj9jlujvGRjydShe1TZiA",
-  authDomain: "chat-9e5ae.firebaseapp.com",
-  projectId: "chat-9e5ae",
-  storageBucket: "chat-9e5ae.appspot.com",
-  messagingSenderId: "623754685774",
-  appId: "1:623754685774:web:dbc59b2589b70192fd021f"
+  apiKey: "AIzaSyBQ5BHeD-ghSr782stoHAExuiJ53qag2Bo",
+  authDomain: "chat-app-ade51.firebaseapp.com",
+  projectId: "chat-app-ade51",
+  storageBucket: "chat-app-ade51.appspot.com",
+  messagingSenderId: "840157977101",
+  appId: "1:840157977101:web:031aa357c2c9ac36a25344"
 };
 
 // Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+
 export const auth = getAuth()
 
 // Create a root reference
