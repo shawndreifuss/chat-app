@@ -78,29 +78,28 @@ const Input = () => {
 
   };
   return (
-    <div className="input">
-      <input
-      onSubmit={handleSend}
-        type="text"
-        placeholder="Type something..."
-        onChange={(e) => setText(e.target.value)}
-        value={text}
-      />
-      <div className="send">
-      <AttachFileIcon className='img'/>
-        <input
+    <div className="footer-chat">
+<input
           type="file"
           style={{ display: "none" }}
           id="file"
           onChange={(e) => setImg(e.target.files[0])}
         />
-        <label htmlFor="file">
-        <AddPhotoAlternateIcon className='img' />
-        </label>
-        <button  onClick={handleSend}>Send</button>
-      </div>
-    </div>
+         <label htmlFor="file">
+          <AddPhotoAlternateIcon className="icon fa fa-smile-o clickable" style={{fontSize:'25pt'}} aria-hidden="true"></AddPhotoAlternateIcon>
+          </label>
+          <input
+      onSubmit={handleSend}
+        type="text"
+        placeholder="Type something..."
+        onChange={(e) => setText(e.target.value)}
+        value={text}
+        className="write-message"
+      />
+          <button  onClick={handleSend} className="icon send fa fa-paper-plane-o clickable" aria-hidden="true"></button>
+        </div>
   );
 };
 
 export default Input;
+
