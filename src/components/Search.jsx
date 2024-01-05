@@ -77,27 +77,36 @@ const Search = () => {
     setUsername("")
   };
   return (
-    <div className="search">
-      <div className="searchForm">
+<>
+      <div className="discussion search">
+      <div className="searchbar">
+            <i onClick={handleKey} className="fa fa-search" aria-hidden="true"></i>
         <input
           type="text"
-          placeholder="Find a user"
+          placeholder="Find a User"
           onKeyDown={handleKey}
           onChange={(e) => setUsername(e.target.value)}
           value={username}
         />
+        </div>
       </div>
       {err && <span>User not found!</span>}
       {user && (
-        <div className="userChat" onClick={handleSelect}>
-          <img src={user.photoURL} alt="" />
-          <div className="userChatInfo">
-            <span>{user.displayName}</span>
-          </div>
+        <div onClick={handleSelect} className="discussion message-active">
+        
+        <img className="photo" src={user.photoURL} alt="" />
+        
+        <div className="desc-contact">
+          <p className="name">{user.displayName}</p>
         </div>
+        </div>
+        
+        
       )}
-    </div>
+   
+    </>
   );
 };
 
 export default Search;
+
