@@ -1,6 +1,6 @@
 
 <a name="readme-top"></a>
-[![MIT License][license-shield]][license-url]
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
@@ -8,10 +8,10 @@
 <div align="center">
 
 
-  <h1 align="center">Chat Application</h1>
+  <h1 align="center">Chat Messaging Application</h1>
 
   <p align="center">
-    An awesome messaging application to connect!<br />
+    This is a chat messaging application built using JavaScript, Firebase, SASS, React, Vue, and HTML. It allows users to communicate in real-time and offers a seamless and engaging user experience.<br />
     <a href="https://github.com/shawndreifuss/chat-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -31,6 +31,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#features">Features</li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -60,19 +61,31 @@ This is a full-stack chat application that can be up and running with just a few
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* FireBase
-* Node.js
-* MUI
-* SASS
+ - React: A JavaScript library for building user interfaces.
+- Vite: A fast build tool for modern web development.
+- JavaScript: The programming language used for the application logic.
+- HTML: The markup language for structuring the application.
+- SASS: A CSS preprocessor for efficient styling.
+- Material-UI (MUI): A popular React UI framework for creating beautiful and responsive designs.
 
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+## Features
+
+- Real-time messaging: Users can send and receive messages instantly, enabling smooth and efficient communication.
+- User authentication: The application provides secure user authentication and authorization features to ensure only authorized users can access the chat.
+- Responsive design: The user interface is designed to be responsive, providing a consistent experience across different devices.
+- Message threading: Users can engage in threaded conversations, making it easier to follow and respond to specific messages.
+- Notifications: The application sends notifications to users when they receive new messages or when they are mentioned in a conversation.
+- Online presence indicators: Users can see the online status of other users, allowing them to know who is currently active.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -96,17 +109,28 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Below is an example of how you can install and set up your app.
 
 1. Clone the repo
    ```sh
    git clone https://github.com/shawndreifuss/chat-app
    ```
-2. Install yarn packages
+2. Navigate to the project directory: 
    ```sh
-   yarn 
+   cd chat-app
    ```
-3. Enter your firebase information in `firebase.js`
+3. Install dependencies: 
+   ```sh
+   yarn
+   ```
+4. Set up Firebase:
+   - Create a Firebase project and obtain the necessary credentials.
+   - Update the Firebase configuration in `src/firebase.js` with your own credentials.
+   
+5. Start the development server 
+   ```sh
+   yarn run dev 
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,9 +148,16 @@ this chat application to message friends, family or anyone that creates an accou
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the Apache-2.0 License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Acknowledgements
+
+- [Firebase](https://firebase.google.com/) for providing real-time database and authentication services.
+- [React](https://reactjs.org/) and [Vite](https://vuejs.org/) for building the user interface.
+- [SASS](https://sass-lang.com/) for efficient styling.
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) for structuring the application.
 
 
 
