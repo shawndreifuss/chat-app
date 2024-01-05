@@ -15,7 +15,7 @@
     <a href="https://github.com/shawndreifuss/chat-app"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://sweet-souffle-90e0b9.netlify.app/login">View Demo</a>
+    <a href="https://sweet-souffle-90e0b9.netlify.app">View Demo</a>
   </p>
 </div>
 
@@ -48,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Screenshot](/src/assets/chat-app.png)
 
 
 
